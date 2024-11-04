@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f3f3f3;
+    margin-top: 300px;
+    background-image: url('https://img.clipart-library.com/2/clip-cookies-background/clip-cookies-background-5.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.upgrade-btn {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.upgrade-btn:hover {
+    background-color: #a0522d;
+}
+
+.container {
+    text-align: center;
+}
+
+#cookie {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('https://dj4ao97lyirny.cloudfront.net/arcfusion/skydata/arc11a011/media/apps/arcimedes/v0/img/products/50085.jpg');
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#cookie:active {
+    transform: scale(0.9);
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* Smoothly transitions background color on hover */
+}
+
+#restart-btn:hover {
+    background-color: #a0522d;
+}
+
+.message {
+    margin-top: 15px;
+    color: red;
+    font-size: 20px;
+}
+
+
+.highlight {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centers the element by shifting it up and left by half its size */
+    padding: 15px 30px;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    display: none;
+    /* Initially hidden */
+    z-index: 10;
+    /* Ensures the popup appears on top of other elements */
+    animation: fadeOut 2s forwards;
+    /* Applies the fade-out animation to the popup over 2 seconds */
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+
+    /*Keyframes is used to define animations */
+    0% {
+        opacity: 1;
+        /* Starts fully visible */
+    }
+
+    80% {
+        opacity: 1;
+        /* Stays fully visible until 80% of the animation time */
+    }
+
+    100% {
+        opacity: 0;
+        /* Fully fades out by the end of the animation */
+    }
+}

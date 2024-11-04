@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Cookie Shop</h2>
+        <button class="upgrade-btn" name="Oatmeal Raisin" cost="25"
+            image="https://cdn11.bigcommerce.com/s-4bcd9/images/stencil/1280x1280/products/42/177/OatmealRasin__76793.1710617770.jpg?c=2">Oatmeal
+            Raisin (25 clicks)</button>
+        <button class="upgrade-btn" name="Sugar Cookie" cost="50"
+            image="https://assets.caseys.com/m/a382e1d048624344/400x400-9843710108_base.PNG">Sugar Cookie (50
+            clicks)</button>
+        <button class="upgrade-btn" name="Peanut Butter" cost="100"
+            image="https://famouscookies.com/wp-content/uploads/2020/11/Famous-Cookie-Peanut-Butter-21-1600x1600-copy-600x600.png">Peanut
+            Butter (100 clicks)</button>
+    </div>
+
+    <div class="container">
+        <h1>Cookie Clicker</h1>
+        <p>Clicks: <span id="count">0</span></p>
+        <div id="cookie"></div>
+        <button id="restart-btn">Restart</button>
+        <p id="message" class="message"></p>
+        <div id="popup" class="popup"></div>
+    </div>
+
+</body>
+
+</html>
